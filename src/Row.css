@@ -1,0 +1,30 @@
+.row__posters{
+    display: flex;
+
+    /* for scrolling behaviour */
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px;
+}
+
+
+/* removes scroll bar slider but kkeeps the scrolling functionality on */
+.row__posters::-webkit-scrollbar{
+    display: none;
+}
+
+.row__poster{
+    width: 100%;
+    object-fit: contain;
+    max-height: 100px;
+    margin-right: 10px;
+
+    /* makes hovering pop up effect smooth */
+    transition: transform 450ms;
+}
+
+/* adds the pop up effect while hovering */
+.row__poster:hover{
+    transform: scale(1.08);
+}
+
